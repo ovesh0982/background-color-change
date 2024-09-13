@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    #box{
+      height: 500px;
+      width: 100%;
+      border: 1px solid black;
+    }
+    button{
+      width: 300px;
+      height: 200px;
+      border-radius: 100% ;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+  </div>
+  <button onclick="green()" style="background-color: green;"></button>
+  <button  onclick="red()" style="background-color: red;"></button>
+  <button  onclick="yellow()" style="background-color: yellow;"></button>
+  <button  onclick="navy()" style="background-color: navy;"></button>
+
+
+  <script>
+    function green(){
+      var a = document.getElementById('box')
+      a.style.backgroundColor="green"
+    }
+    function red(){
+      var a = document.getElementById('box')
+      a.style.backgroundColor="red"
+    }
+    function yellow(){
+      var a = document.getElementById('box')
+      a.style.backgroundColor="yellow"
+    }
+    function navy(){
+      var a = document.getElementById('box')
+      a.style.backgroundColor="navy"
+    }
+  </script>
+</body>
+</html>
